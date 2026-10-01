@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spread Operator</h1>
+    <p>The spread operator allows you to expand an array or object into individual elements.</p>
+    <p id="result"></p>
+
+    <script>
+        // let number = '12345';
+        // let min= Math.min(...number);
+        // let max= Math.max(...number);
+
+        // for a number
+        let number = 12345;
+        let min= Math.min(...number.toString());
+        let max= Math.max(...number.toString());
+        document.getElementById("result").innerHTML = "The minimum value is: " + min + "<br>The maximum value is: " + max;
+    </script>
+</body>
+</html>

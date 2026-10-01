@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> ALL Assignment Operators</h1>
+    <p>Assignment operators assign values to JavaScript variables.</p>
+
+    <p>Value of x is <span id="xValue"></span></p>
+    <p>Value of y is <span id="yValue"></span></p>
+    <p>Value of z is <span id="zValue"></span></p>
+    <p>Value of a is <span id="aValue"></span></p>
+    <p>Value of b is <span id="bValue"></span></p>
+    <script>
+        let x = 10;
+        let y = 25;
+        let z = 20;
+        let a = 15;
+        let b = 30;
+        x += y; // x=x+y
+        document.getElementById("xValue").innerText = x;
+        //now x=35
+
+        y -= z; // y=y-z
+        document.getElementById("yValue").innerText = y;
+        //now y=5
+
+        z *= a; // z=z*a
+        document.getElementById("zValue").innerText = z;
+        //now z=300
+
+        a /= b; // a=a/b
+        document.getElementById("aValue").innerText = a;
+        //now a=0.5
+
+        b %= x; // b=b%x
+        document.getElementById("bValue").innerText = b;
+        //now b=0
+
+    </script>
+</body>
+
+</html>

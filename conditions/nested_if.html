@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Conditional Statements</h1>
+    <p>Conditional statements allow you to execute different blocks of code based on certain conditions.</p>
+    <p id="result"></p>
+
+    <script>
+        let number = 19;
+        let text = "Hey, now are an Adult and you can drive."
+
+        if (number <= 17) {
+            text = "Hey, now are not an Adult and you cannot drive."
+        }
+        document.getElementById("result").innerHTML = text;
+
+    </script>
+</body>
+
+</html>
