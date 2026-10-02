@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Do While Loops</h1>
+    <p>Do while loops allow you to execute a block of code at least once, and then continue executing it as long as a specified condition is true.</p>
+    <p id="result"></p>
+   
+    <script>
+         let i =0;
+        let result = "";
+        do {
+            result = result + "The number is " + i + "<br>";
+            i++;
+        }
+        while (i < 5)
+        document.getElementById("result").innerHTML = result;
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>For of Loops</h1>
+    <p>Iterate values of an array.</p>
+    <p id="result"></p>
+    <script>
+       const cars = ["BMW", "Volvo", "Saab", "Ford"];
+        let output = "";
+
+        // 1. Build the string in memory
+        for (const car of cars) {
+            output += car + "<br>";
+        }
+
+        // 2. Write to the DOM once
+        document.getElementById("result").innerHTML = output;
+    </script>
+</body>
+</html>

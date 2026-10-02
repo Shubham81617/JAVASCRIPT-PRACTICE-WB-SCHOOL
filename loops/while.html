@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> While Loops</h1>
+    <p>While loops allow you to execute a block of code as long as a specified condition is true.</p>
+    <p id="result"></p>
+   
+    <script>
+         let i =0;
+        let result = "";
+        while (i < 5) {
+            result = result +  i + "<br>";
+            i++;
+        }
+        document.getElementById("result").innerHTML = result;
+    </script>
+</body>
+</html>

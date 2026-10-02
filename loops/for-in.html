@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> For Loops</h1>
+    <p>For loops allow you to execute a block of code multiple times.</p>
+
+    <p id="result"></p>
+
+    <script>
+    const cardetails = {BMW: "German", Volvo: "Swedish", Saab: "Swedish", Ford: "American"};
+        let output = "";
+
+        // 1. Build the string in memory
+        for (const car in cardetails) {
+            output += car + ": " + cardetails[car] + "<br>";
+        }
+
+        // 2. Write to the DOM once
+        document.getElementById("result").innerHTML = output;
+    </script>
+</body>
+</html>

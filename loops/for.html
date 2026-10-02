@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> For Loops</h1>
+    <p>For loops allow you to execute a block of code multiple times.</p>
+
+    <p id="result"></p>
+
+    <script>
+        let result = "";
+        for (let i = 1; i <= 5; i++) {
+           result= result + "The number is " + i + "<br>";
+        }
+        document.getElementById("result").innerHTML = result;
+    </script>
+</body>
+</html>
