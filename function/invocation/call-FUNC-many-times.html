@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calling a Function Many Times</h1>
+    <p>This example demonstrates how to call a function multiple times with different arguments.</p>
+    <p id="result"></p>
+    <script>
+        function greet(name){
+            return "Hello, " + name + "! Welcome to the world of functions.";
+        }
+        let call1 = greet("Shubham");
+        let call2 = greet("John");  
+        let call3 = greet("Alice");
+        document.getElementById("result").innerHTML = call1 + "<br>" + call2 + "<br>" + call3;
+    </script>
+</body>
+</html>
