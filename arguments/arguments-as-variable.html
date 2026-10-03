@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arguments as Variable</h1>
+    <p>This example demonstrates how to use parameters and arguments in functions.</p>
+    <p id="result"></p>
+    <script>
+        let x=3;
+        let y=2;
+        function greet(a,b){
+            return a*b;
+        }
+        let message = greet(x,y); 
+        document.getElementById("result").innerHTML = message; 
+    </script>
+</body>
+</html>

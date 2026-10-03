@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Incorrect Arguments in Functions</h1>
+    <p>This example demonstrates what happens when you don't provide the required arguments in functions.</p>
+    <p id="result"></p>
+    <script>
+        function greet(age){
+            return "hello " + age;
+        }
+        let message = greet();
+        //  function greet(age){
+        //     return "hello " + age*18;
+        // }
+        // let message = greet();
+        document.getElementById("result").innerHTML = message;
+    </script>
+</body>
+</html>

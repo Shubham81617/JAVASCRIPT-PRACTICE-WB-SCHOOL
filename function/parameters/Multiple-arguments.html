@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Multiple Arguments in Functions</h1>
+    <p>This example demonstrates how to use multiple arguments in functions.</p>
+    <p id="result"></p>
+    <script>
+        function greet(name,age){
+            return "hello " + name + " and your age is " + age;
+        }
+        let message = greet("Shubham",18);
+        document.getElementById("result").innerHTML = message;
+    </script>
+</body>
+</html>

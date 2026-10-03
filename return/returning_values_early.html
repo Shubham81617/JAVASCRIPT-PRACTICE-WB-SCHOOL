@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Returning Values Early</h1>
+    <p>This example demonstrates how to return values early from a function based on certain conditions.</p>
+    <p id="result"></p>
+    <script>
+        function ageChecker(age) {
+            if(age<18){
+                return "YOu are not eligible to vote";
+            }
+            return "You are eligible to vote";
+        }
+        let message = ageChecker(15);
+        document.getElementById("result").innerHTML = message;
+    </script>
+</body>
+</html>

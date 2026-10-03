@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Rest Parameter </h1>
+	<p id="result"></p>
+
+<script>
+	function sum(...args){
+	let add=0;
+	for(let i=0; i<args.length; i++){
+	add +=args[i];
+	}
+	return "sum of all arguments is "+ add;
+	}
+	let message = sum(1,2,3,4,5,6,7,8,9,10);
+    document.getElementById("result").innerHTML = message;
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Code After Return Statement </h1>
+    <p>This example demonstrates that any code after a return statement in a function will not be executed.</p>
+    <p id="result"></p>
+    <script>
+        function greet(a,b){
+            
+            return a*b;     //only the first return statement will be executed, and the second return statement will be ignored.
+            return "hello";
+        }
+        let message=greet();
+        let message2=greet(5,3);
+
+        document.getElementById("result").innerHTML = message;
+        document.getElementById("result").innerHTML = message2;
+    </script>
+</body>
+</html>

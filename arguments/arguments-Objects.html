@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arguments Object</h1>
+    <p>This example demonstrates how to use the arguments object to access all the arguments passed to a function.</p>
+    <p id="result"></p>
+    <script>
+        let x =(1,11,13,14,15,16,17,18,19,20);
+        function biggestNumber() {
+            let maxNumber =-Infinity;
+            for (let i = 0; i < arguments.length; i++) {
+                if (arguments[i] > maxNumber) {
+                    maxNumber = arguments[i];
+                }
+            }
+            return maxNumber;
+        }
+
+        let message = biggestNumber(x);
+        document.getElementById("result").innerHTML = message;
+            
+    </script>
+</body>
+</html>

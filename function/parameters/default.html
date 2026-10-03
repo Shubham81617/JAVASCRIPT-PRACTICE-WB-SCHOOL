@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Default Arguments in Functions</h1>
+    <p>This example demonstrates how to use default arguments in functions.</p>
+    <p id="result"></p>
+    <script>
+        function greet(name = "Guest"){
+            return "hello " + name;
+        }
+        // let message = greet(); // This will use the default argument "Guest");
+        let message = greet("Shubham");
+        document.getElementById("result").innerHTML = message;
+    </script>
+</body>
+</html>
